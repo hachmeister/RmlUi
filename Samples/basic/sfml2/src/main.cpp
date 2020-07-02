@@ -120,6 +120,15 @@ int main(int /*argc*/, char** /*argv*/)
 		static sf::Event event;
 
 		MyWindow.clear();
+
+		sf::CircleShape circle(50.f);
+		circle.setPosition(100.f, 100.f);
+		circle.setFillColor(sf::Color::Blue);
+		circle.setOutlineColor(sf::Color::Red);
+		circle.setOutlineThickness(10.f);
+
+		MyWindow.draw(circle);
+
 		Context->Render();
 		MyWindow.display();
 
