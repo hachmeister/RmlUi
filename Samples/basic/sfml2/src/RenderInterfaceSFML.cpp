@@ -82,9 +82,9 @@ sf::RenderWindow *RmlUiSFMLRenderer::GetWindow()
 
 void RmlUiSFMLRenderer::Resize()
 {
-	static sf::View View;
-	View.setViewport(sf::FloatRect(0, (float)MyWindow->getSize().x, (float)MyWindow->getSize().y, 0));
-	MyWindow->setView(View);
+	// static sf::View View;
+	// View.setViewport(sf::FloatRect(0, (float)MyWindow->getSize().x, (float)MyWindow->getSize().y, 0));
+	// MyWindow->setView(View);
 
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
