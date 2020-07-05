@@ -98,7 +98,7 @@ void RmlUiSFMLRenderer::Resize()
 void RmlUiSFMLRenderer::RenderGeometry(Rml::Core::Vertex* vertices, int num_vertices, int* indices, int num_indices, const Rml::Core::TextureHandle texture, const Rml::Core::Vector2f& translation)
 {
 	MyWindow->pushGLStates();
-	glViewport(0, 0, MyWindow->getSize().x, MyWindow->getSize().y);
+	initViewport();
 
 	glTranslatef(translation.x, translation.y, 0);
 
